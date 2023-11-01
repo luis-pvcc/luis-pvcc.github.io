@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 5: Programming Algorithms & Software Testing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #353535;
+            color: #e9e9e9;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #4b09a0;
+        }
+
+        h2 {
+            color: #a5a5a5;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #7d74ff;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #350264;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+         
+         a:link {
+            color: rgb(155, 109, 240);
+        }
+
+        
+        a:visited {
+            color: rgb(71, 0, 214);
+        }
+
+        
+        a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        
+        a:active {
+            color: rgb(88, 0, 170);
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 5: Programming Algorithms & Software Testing</h1>
+
+    <h2>Phases of computer program development:</h2>
+    <ol>
+        <li>Understand the problem</li>
+        <li>Design an algorithm to solve the problem</li>
+        <li>Write the program code in an appropriate language based on the algorithm</li>
+        <li>Enter the program and save</li>
+        <li>Execute the program</li>
+        <li>Test the program, find errors and debug, then retest</li>
+        <li>Document and evaluate the program</li>
+    </ol>
+
+    <h2>Programming structures:</h2>
+    <ul>
+        <li>Sequential structure: Top-down execution</li>
+        <li>Decision structures: if/then/else</li>
+        <li>Iterative (Looping):
+            <ul>
+                <li>while loop: continue looping as long something is true</li>
+                <li>repeat/until loop: continue looping until something is true</li>
+                <li>for loop: loop a given number of times</li>
+            </ul>
+        </li>
+        <li>Recursive structures:
+            <ul>
+                <li>Repeat a set of instructions as a subtask of itself</li>
+                <li>Repetition continues until a degenerative case (base case) is met</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Two classic programming/database problems:</h2>
+    <ul>
+        <li>Sorting:
+            <ul>
+                <li>Descending order/Ascending order</li>
+                <li>Sorting numbers</li>
+                <li>Sorting strings (in accordance with ASCII values)</li>
+            </ul>
+        </li>
+        <li>Searching: find specific data that meets a certain criteria
+            <ul>
+                <li>In database:
+                    <ul>
+                        <li>Filters: temporary search</li>
+                        <li>Queries: search criteria are saved so they don't have to be recreated</li>
+                    </ul>
+                </li>
+                <li>Two popular search techniques:
+                    <ul>
+                        <li>Sequential search: search from top to bottom or bottom to top, one item at a time</li>
+                        <li>Binary search: only works if data is SORTED first, start in the middle, then go to half of that, etc.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Two classic program goals:</h2>
+    <ul>
+        <li>Efficiency: Program takes minimal time and/or resources</li>
+        <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+    </ul>
+
+    <h2>Software testing and verification</h2>
+    <ul>
+        <li>Kinds of tests:<a href="https://www.ibm.com/topics/software-testing">Information Link</a></li>
+        <table>
+            <tr>
+                <th>Testing Type</th>
+                <th>Definition</th>
+            </tr>
+            <tr>
+                <td>Acceptance testing</td>
+                <td>Acceptance testing is a type of software testing that evaluates whether a system satisfies the acceptance criteria and meets the specified requirements of the end-users or stakeholders.</td>
+            </tr>
+            <tr>
+                <td>Integration testing</td>
+                <td>Integration testing is a software testing technique where individual components or modules of a system are combined and tested as a group to ensure they work together correctly.</td>
+            </tr>
+            <tr>
+                <td>Unit testing</td>
+                <td>Unit testing is the practice of testing individual units or components of a software application in isolation to ensure their correctness and reliability.</td>
+            </tr>
+            <tr>
+                <td>Functional testing</td>
+                <td>Functional testing is a type of software testing that evaluates the functionality of a system by testing it against the specified requirements and use cases.</td>
+            </tr>
+            <tr>
+                <td>Performance testing</td>
+                <td>Performance testing involves evaluating the speed, responsiveness, and scalability of a software system under various conditions to ensure it meets performance requirements.</td>
+            </tr>
+            <tr>
+                <td>Regression testing</td>
+                <td>Regression testing is the process of retesting a software application to verify that new code changes or updates do not introduce defects or negatively impact existing functionality.</td>
+            </tr>
+            <tr>
+                <td>Stress testing</td>
+                <td>Stress testing is a type of testing that assesses the robustness and stability of a system under extreme conditions or high loads to identify potential weaknesses or vulnerabilities.</td>
+            </tr>
+            <tr>
+                <td>Usability testing</td>
+                <td>Usability testing focuses on evaluating how user-friendly and intuitive a software application is by observing real users as they interact with the system.</td>
+            </tr>
+            <tr>
+                <td>Architectural flaws</td>
+                <td>Software testing is done to detect architectural flaws in the system's design, which may impact the system's stability, scalability, and maintainability.</td>
+            </tr>
+            <tr>
+                <td>Poor design decisions</td>
+                <td>Software testing helps identify poor design decisions that can lead to inefficiencies, maintenance challenges, and overall system problems.</td>
+            </tr>
+            <tr>
+                <td>Invalid or incorrect functionality</td>
+                <td>Testing is conducted to find invalid or incorrect functionality in the software that deviates from the specified requirements or user expectations.</td>
+            </tr>
+            <tr>
+                <td>Security vulnerabilities</td>
+                <td>Software testing is essential for uncovering security vulnerabilities and weaknesses that could expose the system to threats and attacks.</td>
+            </tr>
+            <tr>
+                <td>Scalability issues</td>
+                <td>Testing helps identify scalability issues in software that may affect its ability to handle increased loads or user demands effectively.</td>
+            </tr>
+            <tr>
+                <td>Testing best practices</td>
+                <td>Testing best practices encompass a set of recommended approaches and techniques for achieving high-quality software, including continuous testing, configuration management, service virtualization, defect tracking, and metrics and reporting.</td>
+            </tr>
+            <tr>
+                <th>Term</th>
+                <th>Definition</th>
+            </tr>
+            <tr>
+                <td>Testing best practices</td>
+                <td>
+                    Best practices in software testing refer to the recommended approaches, methodologies, and strategies for testing software applications. These practices help ensure the quality, reliability, and efficiency of the software development and testing processes.
+                </td>
+            </tr>
+            <tr>
+                <td>Software testing and verification section</td>
+                <td>
+                    The software testing and verification section typically focuses on the activities related to testing and verifying software products. It includes test planning, test case design, test execution, and validation to ensure that software meets its intended requirements and functions correctly.
+                </td>
+            </tr>
+            <tr>
+                <td>Continuous testing</td>
+                <td>
+                    Continuous testing is an approach where testing is integrated into the software development process and occurs continuously throughout the development lifecycle. It aims to detect and address issues early in the development process, ensuring that software is always in a testable state.
+                </td>
+            </tr>
+            <tr>
+                <td>Configuration management</td>
+                <td>
+                    Configuration management involves tracking and controlling changes to software and related documents, ensuring that different versions and configurations are well managed. It helps maintain the integrity and consistency of software throughout its lifecycle.
+                </td>
+            </tr>
+            <tr>
+                <td>Service virtualization</td>
+                <td>
+                    Service virtualization is a testing technique that involves simulating the behavior of dependent services, systems, or components that may not be readily available for testing. It allows testers to replicate the behavior of these services for more comprehensive testing.
+                </td>
+            </tr>
+            <tr>
+                <td>Defect or "bug tracking"</td>
+                <td>
+                    Defect or "bug tracking" is the process of documenting, monitoring, and managing software defects or issues that are identified during testing. This helps prioritize and resolve defects to improve software quality.
+                </td>
+            </tr>
+            <tr>
+                <td>Metrics and reporting</td>
+                <td>
+                    Metrics and reporting involve collecting and analyzing data related to software testing and quality. These metrics provide insights into the effectiveness of testing processes and help in making data-driven decisions for improvement.
+                </td>
+            </tr>   
+        </table>
+        
+            </ul>
+        
+    </ul>
+</body>
+</html>
